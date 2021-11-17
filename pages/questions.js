@@ -1,10 +1,14 @@
 import React from "react";
 import Buttons from "../components/Button";
-import {getQuestions} from '../lib/apiQuestions'
+import {getQuestions} from '../lib/apiQuestions';
+import { useRouter } from 'next/router';
 
 const Questions = () =>{
+  const router = useRouter()
+  const num = router.query.num;
+
   const resquestQuestions = async () =>{
-    const questions = await getQuestions(3)
+    const questions = await getQuestions(num)
     console.log('questions: ', questions)
   } 
   resquestQuestions()
