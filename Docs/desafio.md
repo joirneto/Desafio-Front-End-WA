@@ -1,9 +1,7 @@
 # Desafio - Front End
 ## Instruções gerais
 
-Olá!
-
-Que bom que estamos nessa etapa, segue as orientações para realização dessa etapa.
+Olá! Que bom que estamos nessa etapa, segue as orientações para realização dessa etapa.
 
 ## Descrição do problema
 
