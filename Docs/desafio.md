@@ -16,6 +16,7 @@ Imagine que você foi contratado para desenvolver uma aplicação WEB para respo
 - [ ] Nessa lista também deve aparecer a resposta escolhida e a resposta correta.
 - [ ] A pontuação deve ser guardada em no localStorage.
 - [ ] Na primeira página e se houver um questionário salvo no localStorage, deve ter a possibilidade de rever o relatório.
+- [ ] extra: tratar entrada de numero de questões
 
 
 ## Requisitos não funcionais
