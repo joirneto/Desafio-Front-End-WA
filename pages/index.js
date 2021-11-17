@@ -26,7 +26,7 @@ const Index = () =>{
         </span>
         </div>
         <div className ="flex flex-col items-center">
-        <input className ="w-full sm:w-2/6 m-2 p-4 text-lg text-center bg-gray-100 rounded-full border" type="text" name='num' placeholder="NUMBER OF QUESTIONS" value={num} onChange={onChange}/>
+        <input className ="w-full sm:w-2/6 m-2 p-4 text-lg text-center bg-gray-100 rounded-lg border" type="text" name='num' placeholder="NUMBER OF QUESTIONS" value={num} onChange={onChange}/>
         <Link href ={ { pathname: '/questions', query: { num: num } }}>
       <a className="w-full sm:w-2/6 my-2 p-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
       REQUEST!
