@@ -2,7 +2,8 @@ import React from 'react';
 
 const Index = () =>{
   return(
-    <div >Desafio</div>
+    <div >ok
+    </div>
   )
 }
 
