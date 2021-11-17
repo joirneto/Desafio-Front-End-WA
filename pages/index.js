@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
-import Header from '../components/Header';
+
 
 
 
@@ -15,7 +15,6 @@ const Index = () =>{
 
   return(
     <>
-    <Header/>
      <section className="bg-indigo-600 p-2">
        <div className="w-full container mx-auto my-4 flex flex-col justify-center bg-white leading-none ${props.textColor} rounded-lg p-2 shadow text-teal text-sm">
       <div className="m-2 flex flex-col sm:flex-row justify-center">
