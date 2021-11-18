@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {getQuestions} from '../lib/apiQuestions';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
@@ -10,17 +10,21 @@ import Alert from "../components/Alert";
 
 
 const Questions = () =>{
+
   
   const [questions, setQuestions] = useState([]);
   const [success, setSuccess] = useState(false)
   const [alert, setAlert] = useState(false)
-  
+  console.log("ALERTA2 = ", alert)
+
   const router = useRouter()
   const num = router.query.num;
   const questionsConverted = [];
   const questionsCorrects = [];
   
-  
+  const a1 = () =>{
+    setAlert(false)
+  }
 
   const [form, setForm] = useState ([]);
 
@@ -41,11 +45,12 @@ const Questions = () =>{
     setSuccess(true)
   }
 
-  const save = async () => {
+  const save = () => {
+    
    
      if(Object.keys(form).length !== questions.length){
-
       setAlert(true)
+          
      
 
     }else{
@@ -55,7 +60,7 @@ const Questions = () =>{
       router.push('/report')
       setAlert(false)
     } 
-    
+   setTimeout(a1,3000)
     
 
     
