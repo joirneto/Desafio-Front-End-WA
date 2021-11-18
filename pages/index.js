@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 
 
@@ -6,6 +6,17 @@ import Link from 'next/link';
 
 const Index = () =>{
   const [num, setNum] = useState('');
+  const [alertQuestionnaire, setAlertQuestionnaire] = useState(false)
+
+  
+  
+
+  useEffect(()=>{
+    let existingQuestionnaire = localStorage.getItem('questions');
+    if(existingQuestionnaire !== null){
+      setAlertQuestionnaire(true)
+    }
+  },[]) 
 
   const onChange = evt =>{
     const value = evt.target.value
@@ -32,6 +43,13 @@ const Index = () =>{
       REQUEST!
       </a>
     </Link>
+    {alertQuestionnaire && (
+      <Link href ={'/report'}>
+        <a className="w-full sm:w-2/6 my-2 p-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg">
+        There is a questionnaire already carried out. Click here to see the fix.
+        </a>
+      </Link>
+    )}
         </div>
     </div>
      </section>

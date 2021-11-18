@@ -11,10 +11,10 @@ Imagine que você foi contratado para desenvolver uma aplicação WEB para respo
 - [x] Após escolher, deve aparecer uma página com dois botões, "Start" e "Cancel".
 - [x] Ao selecionar "Cancel", deve retornar para escolher a quantidade.
 - [x] Ao selecionar "Start" deve fazer requisição na URL disponibilizada, pegar as perguntas e a cada pergunta, deve exibir as respostas.
-- [ ] O usuário deve escolher uma resposta e a cada resposta deve contabilizar quantidade de acertos e erros.
-- [ ] Ao final, deve vir um relatório com a quantidade de acertos e erros e uma lista de cada questão e qual foi certo e qual foi errado.
-- [ ] Nessa lista também deve aparecer a resposta escolhida e a resposta correta.
-- [ ] A pontuação deve ser guardada em no localStorage.
+- [x] O usuário deve escolher uma resposta e a cada resposta deve contabilizar quantidade de acertos e erros.
+- [x] Ao final, deve vir um relatório com a quantidade de acertos e erros e uma lista de cada questão e qual foi certo e qual foi errado.
+- [x] Nessa lista também deve aparecer a resposta escolhida e a resposta correta.
+- [x] A pontuação deve ser guardada em no localStorage.
 - [ ] Na primeira página e se houver um questionário salvo no localStorage, deve ter a possibilidade de rever o relatório.
 - [ ] extra: tratar entrada de numero de questões
 
