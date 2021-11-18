@@ -4,13 +4,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Alert from "../components/Alert";
 
-
-
-
-
-
 const Questions = () =>{
-
   
   const [questions, setQuestions] = useState([]);
   const [success, setSuccess] = useState(false)
@@ -54,9 +48,9 @@ const Questions = () =>{
      
 
     }else{
-      localStorage.setItem('form', JSON.stringify(questionsConverted));
-      localStorage.setItem('formCorrect', JSON.stringify(questionsCorrects));
-      localStorage.setItem('formUser', JSON.stringify(form));
+      localStorage.setItem('questions', JSON.stringify(questionsConverted));
+      localStorage.setItem('questionsCorrects', JSON.stringify(questionsCorrects));
+      localStorage.setItem('questionsUser', JSON.stringify(form));
       router.push('/report')
       setAlert(false)
     } 
