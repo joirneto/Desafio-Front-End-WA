@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Alert from "../components/Alert";
+import Alert from "../components/alert";
 
 
 const Index = () => {
@@ -28,13 +28,12 @@ const Index = () => {
     } else {
       router.push({
         pathname: '/questions',
-        query: { num: num },
+        query: { num },
       })
     }
   }
 
   return (
-    <>
       <section className="bg-indigo-600 p-2">
         <div className="w-full container mx-auto my-4 flex flex-col justify-center bg-white leading-none ${props.textColor} rounded-lg p-2 shadow text-teal text-sm">
           <div className="m-2 flex flex-col sm:flex-row justify-center">
@@ -61,7 +60,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </>
   )
 }
 

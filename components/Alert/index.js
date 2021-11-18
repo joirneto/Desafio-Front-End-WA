@@ -26,15 +26,7 @@ const Alert = ({msg}) => (
                 </a>
             </div>
             <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
-                <button type="button" class="-mr-1 flex p-2 rounded-md hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2">
-                    <span class="sr-only">
-                        Dismiss
-                    </span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="h-6 w-6 text-white" viewBox="0 0 1792 1792">
-                        <path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z">
-                        </path>
-                    </svg>
-                </button>
+                
             </div>
         </div>
     </div>

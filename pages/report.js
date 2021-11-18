@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Result from '../components/Result'
+import Result from '../components/result'
 
 const Report = () => {
 
@@ -41,7 +41,6 @@ const Report = () => {
   }, [hits]);
 
   return (
-    <>
       <div className="bg-indigo-600 p-2">
         <div className=" w-full container mx-auto my-4 flex flex-col justify-center items-center  bg-white leading-none ${props.textColor} rounded-lg p-2 shadow text-teal text-sm ">
           <div className="w-full container mx-auto flex flex-col justify-center items-center" >
@@ -55,7 +54,7 @@ const Report = () => {
                   {item.answers.map(ans => {
                     return (
                       <div className="flex mb-2">
-                        <input disabled name={item.question} className="h-4 w-4 my-2 border-gray-300 focus:ring-2 focus:ring-blue-300" type='radio' value={ans} checked={questionsUser[item.question] === ans} />
+                        <input disabled name={item.question} className="h-4 w-4 my-2 border-gray-300 focus:ring-2 focus:ring-purple-600" type='radio' value={ans} checked={questionsUser[item.question] === ans} />
                         <label className={questionsCorrects[item.question] === ans ? "bg-green-400 font-medium text-gray-900 ml-2 block text-lg" : "bg-red-400 font-medium text-gray-900 ml-2 block text-lg"}>{ans} <br /> </label>
                       </div>
                     )
@@ -71,7 +70,6 @@ const Report = () => {
           </Link>
         </div>
       </div>
-    </>
   )
 };
 
