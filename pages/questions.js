@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getQuestions } from '../lib/apiQuestions';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Alert from "../components/alert";
+import Alert from "../components/Alert";
 
 const Questions = () => {
 

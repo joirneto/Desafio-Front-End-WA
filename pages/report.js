@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Result from '../components/result'
+import Result from '../components/Result'
 
 const Report = () => {
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Alert from "../components/alert";
+import Alert from "../components/Alert";
 
 
 const Index = () => {
