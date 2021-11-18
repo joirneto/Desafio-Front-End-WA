@@ -10,7 +10,7 @@ Imagine que você foi contratado para desenvolver uma aplicação WEB para respo
 - [x] Ao acessar a página, o usuário deve escolher a quantidade de perguntas que deseja responder.
 - [x] Após escolher, deve aparecer uma página com dois botões, "Start" e "Cancel".
 - [x] Ao selecionar "Cancel", deve retornar para escolher a quantidade.
-- [ ] Ao selecionar "Start" deve fazer requisição na URL disponibilizada, pegar as perguntas e a cada pergunta, deve exibir as respostas.
+- [x] Ao selecionar "Start" deve fazer requisição na URL disponibilizada, pegar as perguntas e a cada pergunta, deve exibir as respostas.
 - [ ] O usuário deve escolher uma resposta e a cada resposta deve contabilizar quantidade de acertos e erros.
 - [ ] Ao final, deve vir um relatório com a quantidade de acertos e erros e uma lista de cada questão e qual foi certo e qual foi errado.
 - [ ] Nessa lista também deve aparecer a resposta escolhida e a resposta correta.
