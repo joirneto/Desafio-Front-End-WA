@@ -1,6 +1,6 @@
 import React from "react";
 
-const Alert = () => (
+const Alert = ({msg}) => (
   <div class="bg-pink-600 dark:bg-gray-800">
     <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between flex-wrap">
@@ -22,7 +22,7 @@ const Alert = () => (
             </div>
             <div class="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
                 <a href="#" class="flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-pink-600 dark:text-gray-800 bg-white hover:bg-pink-50">
-                All questions have to be answered
+                {msg}
                 </a>
             </div>
             <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-3">

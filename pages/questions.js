@@ -128,7 +128,7 @@ const Questions = () =>{
     <button className="w-full sm:w-3/12 m-2 p-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg" onClick={save}>SUBMIT ANSWERS</button>
     )}
     {alert && (
-    <Alert/>
+    <Alert msg = {'All questions have to be answered'}/>
     )}
     </div>
     </div>
