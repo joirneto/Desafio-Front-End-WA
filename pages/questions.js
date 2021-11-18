@@ -65,14 +65,14 @@ const Questions = () => {
             </div>
           )}
           {success && (
-            <section className='w-full sm:w-9/12 p-4 m-4 flex flex-col items-center justify-center shadow-lg rounded-xl bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden'>
+            <section className='w-full sm:w-9/12 p-4 m-4 flex flex-col shadow-lg rounded-xl bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden'>
               {questions.map((item, index) => {
                 return (
-                  <section className='flex flex-col items-center'>
+                  <section className='flex flex-col'>
                     <label className='p-2 m-2 font-bold text-lg' >{`Question ${index + 1}: `} {item.question}</label>
                     {item.answers.map(ans => {
                       return (
-                        <div className="flex items-center mb-4">
+                        <div className="flex">
                           <input name={item.question} className="h-4 w-4 my-2 border-gray-300 focus:ring-2 focus:ring-blue-300" type='radio' value={ans} onChange={onChange} />
                           <label className="font-medium text-gray-900 ml-2 block text-lg">{ans} <br /> </label>
                         </div>
