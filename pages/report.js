@@ -51,8 +51,10 @@ const Report = () =>{
     <>
     <div className="bg-indigo-600 p-2">
       <div className=" w-full container mx-auto my-4 flex flex-col justify-center items-center  bg-white leading-none ${props.textColor} rounded-lg p-2 shadow text-teal text-sm">
-      <div className="w-full container mx-auto flex flex-col sm:flex-row justify-center items-center" >
-        <h1>{hits}</h1>
+      <div className="w-full container mx-auto flex flex-col justify-center items-center" >
+        <p className="font-bold p-2 text-3xl">ALL QUESTIONS: {questions.length} </p>
+        <p className="p-1 text-3xl text-green-400">RIGHTS: {hits}   </p>
+        <p className="p-1 text-3xl text-red-400">ERRORS: {questions.length - hits}</p>
       </div>
       
     <section className='w-full sm:w-9/12 p-4 m-4 flex flex-col items-center justify-center bg-gray-100 rounded-lg border'>
