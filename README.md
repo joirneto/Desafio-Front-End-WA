@@ -7,7 +7,7 @@
 
 Este projeto foi construído durante o curso Fullstack Master do [DevPleno](https://devpleno.com), tendo como base o projeto https://github.com/RenatoSiqueira/PrecisoDe. Uma versão online deste projeto pode ser encontrada em: https://palpite-box-joir-dev.vercel.app/ .
 
-![Preview](https://github.com/joirneto/PrecisandoDeFaleCom/blob/main/public/TelaInicial.png?raw=true)
+![Preview](https://github.com/joirneto/Desafio-Front-End-WA/blob/main/public/Home.png)
 
 
 ## Início
