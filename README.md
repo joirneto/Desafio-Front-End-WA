@@ -19,9 +19,7 @@ npm run dev
 
 ## Construído com:
 
-* [NextJS](https://nextjs.org/) -The React Framework.
-* [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework for
-rapidly building custom designs.
+Stack: React + React Router Dom + Axios - Integração com API externa + NextJS + Tailwind
 
 ## Author:
 
