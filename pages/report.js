@@ -47,6 +47,8 @@ const Report = () =>{
 
   }
 
+  
+
   return(
     <>
     <div className="bg-indigo-600 p-2">
@@ -63,8 +65,8 @@ const Report = () =>{
             {item.answers.map(ans =>{
                 return(
                   <div className="flex items-center mb-4">
-                  <input name={item.question} className="h-4 w-4 my-2 border-gray-300 focus:ring-2 focus:ring-blue-300" type='radio' value={ans} onChange={onChange} />
-                  <label className="text-sm font-medium text-gray-900 ml-2 block text-lg">{ans} <br/> </label>
+                   <input name={item.question} className="h-4 w-4 my-2 border-gray-300 focus:ring-2 focus:ring-blue-300" type='radio' value={ans} onChange={onChange} checked={questionsUser[item.question]===ans}/>
+                  <label className={questionsCorrects[item.question]===ans ? "bg-green-400 font-medium text-gray-900 ml-2 block text-lg":"bg-red-400 font-medium text-gray-900 ml-2 block text-lg"}>{ans} <br/> </label>
                   </div>
                 )
             })}         

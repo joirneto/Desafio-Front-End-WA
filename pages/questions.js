@@ -14,7 +14,7 @@ const Questions = () =>{
   const router = useRouter()
   const num = router.query.num;
   const questionsConverted = [];
-  const questionsCorrects = [];
+  const questionsCorrects = {};
   
   const a1 = () =>{
     setAlert(false)
@@ -48,6 +48,8 @@ const Questions = () =>{
      
 
     }else{
+      
+      
       localStorage.setItem('questions', JSON.stringify(questionsConverted));
       localStorage.setItem('questionsCorrects', JSON.stringify(questionsCorrects));
       localStorage.setItem('questionsUser', JSON.stringify(form));
@@ -73,13 +75,10 @@ const Questions = () =>{
         answers: answersAll
       }
 
-      const aux2 = {
-        question: question.question.replace(/&quot;/g,' ' ).replace('&#039;',7).replace("&eacute;", 'e').replace(/&amp;/, '&'),
-        answers: question.correct_answer.replace(/&quot;/g,' ' ).replace('&#039;',7).replace("&eacute;", 'e').replace(/&amp;/, '&')
-      }
+     
 
       questionsConverted.push(aux1)
-      questionsCorrects.push(aux2)
+      questionsCorrects[question.question.replace(/&quot;/g,' ' ).replace('&#039;',7).replace("&eacute;", 'e').replace(/&amp;/, '&')] = question.correct_answer.replace(/&quot;/g,' ' ).replace('&#039;',7).replace("&eacute;", 'e').replace(/&amp;/, '&')
       
     });
 
