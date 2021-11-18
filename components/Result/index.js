@@ -8,8 +8,7 @@ const Result = ({total, right, errors}) => {
 
     return(
     <div className="shadow-lg rounded-xl w-60 md:w-1/2 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden">
-    <a href="#" className="w-full h-full block">
-        <div className="w-full">
+        <div className="w-full h-full block">
             <p className="text-indigo-700 dark:text-white  text-3xl font-light mb-4">
             CORRECTION
             </p>
@@ -21,8 +20,8 @@ const Result = ({total, right, errors}) => {
                     {total}
                 </p>
             </div>
-            <div classNameName="w-full h-2 bg-green-100 rounded-full mb-4">
-                <div className={`w-${'full'} h-full text-center text-xs text-white bg-indigo-400 rounded-full`}>
+            <div className="w-full h-2 bg-indigo-100 rounded-full mb-4">
+                <div className={`w-full h-full text-center text-xs text-white bg-blue-400 rounded-full`}>
                 </div>
             </div>
             <div className="flex items-center justify-between text-gray-400 text-2xl">
@@ -59,7 +58,6 @@ const Result = ({total, right, errors}) => {
             </div>
             
         </div>
-    </a>
 </div>
 )
 }
