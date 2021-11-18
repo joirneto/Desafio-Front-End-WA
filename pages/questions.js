@@ -64,7 +64,7 @@ const Questions = () => {
             </div>
           )}
           {success && (
-            <section className='w-full sm:w-9/12 p-4 m-4 flex flex-col item-ce shadow-lg rounded-xl bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden'>
+            <section className='w-full sm:w-9/12 p-4 m-4 flex flex-col shadow-lg rounded-xl bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden'>
               {questions.map((item, index) => {
                 return (
                   <section className='flex flex-col'>
