@@ -15,8 +15,7 @@ Imagine que você foi contratado para desenvolver uma aplicação WEB para respo
 - [x] Ao final, deve vir um relatório com a quantidade de acertos e erros e uma lista de cada questão e qual foi certo e qual foi errado.
 - [x] Nessa lista também deve aparecer a resposta escolhida e a resposta correta.
 - [x] A pontuação deve ser guardada em no localStorage.
-- [ ] Na primeira página e se houver um questionário salvo no localStorage, deve ter a possibilidade de rever o relatório.
-- [ ] extra: tratar entrada de numero de questões
+- [x] Na primeira página e se houver um questionário salvo no localStorage, deve ter a possibilidade de rever o relatório.
 
 
 ## Requisitos não funcionais
