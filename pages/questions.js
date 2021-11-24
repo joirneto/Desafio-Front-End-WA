@@ -14,7 +14,6 @@ const Questions = () => {
   const router = useRouter()
   const num = router.query.num;
 
-
   const alertVerify = () => {
     setAlert(false)
   }
@@ -67,7 +66,7 @@ const Questions = () => {
             <section className='w-full sm:w-9/12 p-4 m-4 flex flex-col shadow-lg rounded-xl bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden'>
               {questions.map((item, index) => {
                 return (
-                  <section className='flex flex-col'>
+                  <section key = {index} className='flex flex-col'>
                     <label className='p-2 m-2 font-bold text-lg' >{`Question ${index + 1}: `} {item.question}</label>
                     {item.answers.map(ans => {
                       return (
@@ -81,10 +80,8 @@ const Questions = () => {
 
                 )
               })}
-
             </section>
           )}
-
           {success && (
             <button className="w-full sm:w-3/12 m-2 p-4 bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg" onClick={save}>SUBMIT ANSWERS</button>
           )}
